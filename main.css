@@ -1,0 +1,19 @@
+#gridSystem{
+    display:  flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top:  25%;
+    display: block;
+    width: 40vw;
+    height: 39vw;
+}
+
+.gridBlock{
+    flex-direction: row;
+    border: 1px solid blue;
+    width: (40/16)vw;
+
+}
+.drawn{
+    background-color: blueviolet;
+}
