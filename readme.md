@@ -1,1 +1,1 @@
-#Project to make a browser based etch a sketch
+# Project to make a browser based etch a sketch
