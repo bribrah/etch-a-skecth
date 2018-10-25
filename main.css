@@ -1,3 +1,10 @@
+/*PAGE STYLE*/
+
+html{
+    background-color: rgb(231, 238, 238)
+}
+
+
 /* TITLE STYLES */
 .titleBox{
     width:  25vw;
@@ -7,9 +14,19 @@
 
 /*BUTTON STYLES */
 .buttonBar{
+    display: flex;
+    justify-content: space-between;
     width : 500px;
     margin:  auto;
     margin-top: 7%;
+}
+
+.buttonBar button{
+width: 100px;
+box-shadow: 4px 4px 2px;
+}
+.buttonBar .enabled{
+    box-shadow: 0px 0px;
 }
 
 
@@ -18,15 +35,28 @@
     margin: auto;
     margin-top:  1%;
     display: block;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
+    background-color: white;
 }
 
 .gridBlock{
     float: left;
-    outline: .1px solid black
+    outline: .1px solid black;
+}
+.etch1{
+    opacity: .2;
 
 }
-.drawn{
-    background-color: blueviolet;
+.etch2{
+    opacity:  .4;
+}
+.etch3{
+    opacity: .6;
+}
+.etch4{
+    opacity: .8;
+}
+.etch{
+    opacity: 1;
 }
