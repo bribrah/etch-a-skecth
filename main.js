@@ -14,19 +14,21 @@ function colorChange(){
     else if (etch === true){
 
         this.style.backgroundColor = "black"; 
-        if (this.classList.contains("etch1" === true)){
+        if (this.classList.contains("etch1") === true){
             this.classList.replace("etch1","etch2");
+            console.log("test");
+            
         }
-        else if (this.classList.contains("etch2" === true)){
+        else if (this.classList.contains("etch2") === true){
             this.classList.replace("etch2","etch3");
     }
-    else if (this.classList.contains("etch3" === true)){
+    else if (this.classList.contains("etch3" )=== true){
         this.classList.replace("etch3","etch4");
         }
-        else if (this.classList.contains("etch4" === true)){
+        else if (this.classList.contains("etch4") === true){
             this.classList.replace("etch4","etch5");
         }
-        else if (this.classList.contains("etch5" === true)){
+        else if (this.classList.contains("etch5") === true){
             return;
         }
         else{
@@ -78,14 +80,23 @@ function resetGrid(){
 //rainbow button function
 let rainbowButton = document.querySelector("#rainbow");
 
-rainbowButton.addEventListener('click', function(){
+function rainbowButtonClick(){
+    if (etch === true){
+        etchButton.click();
+    }
     rainbow = !rainbow;
     this.classList.toggle("enabled");
-});
-
-let etchButton = document.querySelector("#etch");
-etchButton.addEventListener("click", function(){
+}
+function etchButtonClick(){
+    if (rainbow === true){
+        rainbowButton.click()
+    }
     etch = !etch;
     this.classList.toggle("enabled");
-})
+}
+
+rainbowButton.addEventListener('click', rainbowButtonClick);
+
+let etchButton = document.querySelector("#etch");
+etchButton.addEventListener("click", etchButtonClick)
 resetButton.addEventListener('click', resetGrid);
