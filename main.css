@@ -1,17 +1,30 @@
-#gridSystem{
-    display:  flex;
-    flex-wrap: wrap;
+/* TITLE STYLES */
+.titleBox{
+    width:  25vw;
     margin: auto;
-    margin-top:  25%;
+    text-align:  center;
+}
+
+/*BUTTON STYLES */
+.buttonBar{
+    width : 500px;
+    margin:  auto;
+    margin-top: 7%;
+}
+
+
+
+#gridSystem{
+    margin: auto;
+    margin-top:  1%;
     display: block;
-    width: 40vw;
-    height: 39vw;
+    width: 500px;
+    height: 500px;
 }
 
 .gridBlock{
-    flex-direction: row;
-    border: 1px solid blue;
-    width: (40/16)vw;
+    float: left;
+    border: 1px solid black
 
 }
 .drawn{
